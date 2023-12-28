@@ -8,6 +8,10 @@
 
 [📤] - [Xpanse.pptx](https://github.com/plzZarbotay/xpanse/blob/main/Xpanse.pptx) - Презентация проекта Xpanse ( *PPTX версия* )
 
+[📸] - [Xpanse.docx](https://github.com/plzZarbotay/xpanse/blob/main/Xpanse.docx) - Отчет проекта Xpanse ( *DOCX версия* )
+
+[👋] - [Xpanse_doc.pdf](https://github.com/plzZarbotay/xpanse/blob/main/Xpanse_doc.pdf) - Отчет проекта Xpanse ( *PDF версия* )
+
 [🎉] - [simmulation.py](https://github.com/plzZarbotay/xpanse/blob/main/simmulation.py) - Реализация симмуляции полета non-rocket-spacelaunch на языке Python 
 
 [🦗] - [graphs_Xpanse_ARKT2023.ipynb](https://github.com/plzZarbotay/xpanse/blob/main/graphs_Xpanse_ARKT2023.ipynb) - КОД, который генерировал нам графики ( *Jupyter Notebook* )

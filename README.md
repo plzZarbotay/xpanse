@@ -10,6 +10,6 @@
 
 [🎉] - [simmulation.py](https://github.com/plzZarbotay/xpanse/simmulation.py) - Реализация симмуляции полета non-rocket-spacelaunch на языке Python 
 
-[🦗] - [graphs_Xpanse_ARKT2023.ipynb](https://github.com/plzZarbotay/xpanse/graphs_Xpanse_ARKT2023.ipynb) - КОД, который генерировал нам графики ( Jupyter Notebook )
+[🦗] - [graphs_Xpanse_ARKT2023.ipynb](https://github.com/plzZarbotay/xpanse/graphs_Xpanse_ARKT2023.ipynb) - КОД, который генерировал нам графики ( *Jupyter Notebook* )
 
-[🫎] - [graphs_Xpanse_ARKT2023.py](https://github.com/plzZarbotay/xpanse/graphs_Xpanse_ARKT2023.py) - КОД, который генерировал нам графики ( Python File )
+[🫎] - [graphs_Xpanse_ARKT2023.py](https://github.com/plzZarbotay/xpanse/graphs_Xpanse_ARKT2023.py) - КОД, который генерировал нам графики ( *Python File* )

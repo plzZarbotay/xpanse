@@ -129,7 +129,6 @@ for second in seconds:
     current_rocket_speed = velocity(V0,a,second)
     air_speed += 8*current
     print(f'Текущая скорость ракеты: {current_rocket_speed } м/с')
-    print(f"Подъемная сила:{lift(Cd,p_air,current_rocket_speed,S_wing_area)}")
     current += 1
 
 print("=========================")
@@ -139,7 +138,6 @@ print("-------------------------")
 print(f'Масса ракеты: {M_0} кг')
 print(f'Скорость: {current_rocket_speed}')
 print(f'Ускорение: {a_r}')
-print(f'Подъемная сила: {lift(Cd,p_air,current_rocket_speed,S_wing_area)}')
 print(f'Сопротивление: {D}')
 print("=========================")
 

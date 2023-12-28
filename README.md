@@ -1,8 +1,8 @@
 # xpanse
-##Творим чудеса!
+## Творим чудеса!
 [![Header](https://github.com/plzZarbotay/xpanse/blob/main/image.png)](https://github.com/plzZarbotay/xpanse)
 
-#Навигатор по GitHub Xpanse
+# Навигатор по GitHub Xpanse
 
 [📦] - [Xpanse.pdf](https://github.com/plzZarbotay/xpanse/blob/main/Xpanse.pdf) - Презентация проекта Xpanse ( PDF ОБЯЗАТЕЛЬНО К ПРОСМОТРУ )
 
@@ -12,4 +12,4 @@
 
 [🦗] - [graphs_Xpanse_ARKT2023.ipynb](https://github.com/plzZarbotay/xpanse/graphs_Xpanse_ARKT2023.ipynb) - КОД, который генерировал нам графики ( Jupyter Notebook )
 
-[🦗] - [graphs_Xpanse_ARKT2023.py](https://github.com/plzZarbotay/xpanse/graphs_Xpanse_ARKT2023.py) - КОД, который генерировал нам графики ( Python File )
+[🫎] - [graphs_Xpanse_ARKT2023.py](https://github.com/plzZarbotay/xpanse/graphs_Xpanse_ARKT2023.py) - КОД, который генерировал нам графики ( Python File )

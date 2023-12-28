@@ -8,10 +8,10 @@
 
 [📤] - [Xpanse.pptx](https://github.com/plzZarbotay/xpanse/blob/main/Xpanse.pptx) - Презентация проекта Xpanse ( *PPTX версия* )
 
-[🎉] - [simmulation.py](https://github.com/plzZarbotay/xpanse/simmulation.py) - Реализация симмуляции полета non-rocket-spacelaunch на языке Python 
+[🎉] - [simmulation.py](https://github.com/plzZarbotay/xpanse/blob/main/simmulation.py) - Реализация симмуляции полета non-rocket-spacelaunch на языке Python 
 
-[🦗] - [graphs_Xpanse_ARKT2023.ipynb](https://github.com/plzZarbotay/xpanse/graphs_Xpanse_ARKT2023.ipynb) - КОД, который генерировал нам графики ( *Jupyter Notebook* )
+[🦗] - [graphs_Xpanse_ARKT2023.ipynb](https://github.com/plzZarbotay/xpanse/blob/main/graphs_Xpanse_ARKT2023.ipynb) - КОД, который генерировал нам графики ( *Jupyter Notebook* )
 
-[🫎] - [graphs_Xpanse_ARKT2023.py](https://github.com/plzZarbotay/xpanse/graphs_Xpanse_ARKT2023.py) - КОД, который генерировал нам графики ( *Python File* )
+[🫎] - [graphs_Xpanse_ARKT2023.py](https://github.com/plzZarbotay/xpanse/blob/main/graphs_Xpanse_ARKT2023.py) - КОД, который генерировал нам графики ( *Python File* )
 
-[💙] - [coefficient.dat](https://github.com/plzZarbotay/xpanse/coefficient.dat) - Вытащенная таблица коэф. сопротивления из OpenFoam
+[💙] - [coefficient.dat](https://github.com/plzZarbotay/xpanse/blob/main/coefficient.dat) - Вытащенная таблица коэф. сопротивления из OpenFoam

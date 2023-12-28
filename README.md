@@ -14,4 +14,4 @@
 
 [🫎] - [graphs_Xpanse_ARKT2023.py](https://github.com/plzZarbotay/xpanse/blob/main/graphs_Xpanse_ARKT2023.py) - КОД, который генерировал нам графики ( *Python File* )
 
-[💙] - [coefficient.dat](https://github.com/plzZarbotay/xpanse/blob/main/coefficient.dat) - Вытащенная таблица коэф. сопротивления из OpenFoam
+[💙] - [coefficient.dat](https://github.com/plzZarbotay/xpanse/blob/main/coefficient.dat) - Экспортированная таблица коэф. сопротивления из OpenFoam

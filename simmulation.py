@@ -11,19 +11,14 @@ import random
 
 def tsialkovsky_rocket_velocity(F, M_0, I_sp, g_0, t):
     return -g_0 * I_sp * ln(g_0 * I_sp * M_0 - F * t) + g_0 * I_sp * ln(g_0 * I_sp * M_0)
-
 def specific_impulse(F, delta_m, g_0):
     return F / (delta_m * g_0)
-
 def velocity(V0, a, t):
     return V0 + a*t
-
 def delta_velocity(M_t, M_0, I_sp, g_0):
     return -g_0 * I_sp * ln(1 - M_t / M_0)
-
 def burn_time(delta_V, M_0, F, I_sp, g_0):
     return (g_0 * I_sp * M_0 * (1 - math.e**(-delta_V / (g_0 * I_sp)))) / F
-    
 def aerodynamic_resistance(p,v,Ca,A):
     # Из опен фоам
     return (1/2)*p*v**2*Ca*A
@@ -72,6 +67,7 @@ Cd = 2.424121 # коэффициент сопротивления
 M_0 = 24805  # начальная масса ракеты (кг)
 I_sp = 6024  # удельный импульс (сек)
 t = 450  # время прожига/секунда
+S_wing_area = 16 # площадь 2 крыльев (м^2)
 
 # --- 0 Этап ( Конфиг ) ---
 # Разгон
@@ -84,7 +80,7 @@ delta_M = 15 # кг/c
 A = 3.94 # Площадь поперечного сечения аппарата (м^2)
 
 rocket_speed = tsialkovsky_rocket_velocity(F, M_0, I_sp, g_0, t)
-print("Характерестическая скорость: ", rocket_speed)
+print("Характерестическая скорость: ", rocket_speed, "(м/с)")
 
 # Этап разгона
 # График ускорение/секунда , скорость секунда
@@ -97,16 +93,19 @@ for second in seconds:
     a_r = approach_acceleration(F,M_0,D,g_0)
     current_rocket_speed = velocity(V0_r,a_r,second)
     # Посчитаем Аэродинамическое сопротивление
-    print(f'Текущая скорость ракеты разгон: {current_rocket_speed } м/с')
+    print(f'Текущая скорость ракеты разгон: {current_rocket_speed } (м/с)')
+    print(f'Подъемная сила: {lift(Cd, p_air,current_rocket_speed, S_wing_area)} (Н)')
 
 print("-------------------------")
 print("-------------------------")
 print("Разгон закончен! Данные:")
 print("-------------------------")
-print(f'Масса ракеты: {M_0} кг')
+print(f'Масса ракеты: {M_0} (кг)')
 print("Условия отрыва выполнены!")
-print(f'Скорость при отрыве: {current_rocket_speed}')
-print(f'Ускорение при отрыве: {a_r}')
+print(f'Скорость при отрыве: {current_rocket_speed} (м/с)')
+print(f'Сопротивление: {D} (Н)')
+print(f'Подъемная сила: {lift(Cd, p_air,current_rocket_speed, S_wing_area)} (Н)')
+print(f'Ускорение при отрыве: {a_r} (м^2/с)')
 print("-------------------------")
 print("-------------------------")
 
@@ -128,17 +127,17 @@ for second in seconds:
     a = acceleration_condtion_force(F,D,M_0)
     current_rocket_speed = velocity(V0,a,second)
     air_speed += 8*current
-    print(f'Текущая скорость ракеты: {current_rocket_speed } м/с')
+    print(f'Текущая скорость ракеты: {current_rocket_speed} (м/с)')
     current += 1
 
 print("=========================")
 print("-------------------------")
 print("Взлет (Этап I/II) закончен! Данные:")
 print("-------------------------")
-print(f'Масса ракеты: {M_0} кг')
-print(f'Скорость: {current_rocket_speed}')
-print(f'Ускорение: {a_r}')
-print(f'Сопротивление: {D}')
+print(f'Масса ракеты: {M_0} (кг)')
+print(f'Скорость: {current_rocket_speed} (м/с)')
+print(f'Ускорение: {a_r} (м^2/с)')
+print(f'Сопротивление: {D} (Н)')
 print("=========================")
 
 
@@ -161,67 +160,19 @@ for second in seconds:
     #print("a->",a,"D->",D)
     current_rocket_speed = velocity(V0,a,second)
     air_speed += 80*current
-    print(f'Текущая скорость ракеты: {current_rocket_speed } м/с')
+    print(f'Текущая скорость ракеты: {current_rocket_speed } (м/с)')
     current += 1
 
 print("=========================")
 print("-------------------------")
 print("Взлет (Этап II/II) закончен! Данные:")
 print("-------------------------")
-print(f'Масса ракеты: {M_0} кг')
-print(f'Скорость: {current_rocket_speed}')
-print(f'Ускорение: {a}')
-print(f'Сопротивление: {D}')
+print(f'Масса ракеты: {M_0} (кг)')
+print(f'Скорость: {current_rocket_speed} (м/с)')
+print(f'Ускорение: {a} (м^2/с)')
+print(f'Сопротивление: {D} (Н)')
 print("=========================")
 
 print("-------------------------")
 print("Симмуляция успешно завершена!")
 print("-------------------------")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""
-print(seconds )
-rocket_speed = tsialkovsky_rocket_velocity(F, M_0, I_sp, g_0, t)
-#rocket_speed_tested = delta_velocity(M_t, mass_rocket, I_sp, g_0)
-specific_impulse_data = specific_impulse(F, mass_rocket, g_0)
-seconds = [6, 7, 15, 19, 27, 29, 34, 35, 42]
-t_p = burn_time(rocket_speed,M_0,F, I_sp,g_0)
-if int(M_0*a_r) >= int(F - D - wheel_friction_force(M_0,g_0)):
-    print('Условие разгона выполнено!')
-print(f'DV: {rocket_speed } м/с')
-print(f'Burn Time: {t_p}')
-for second in seconds:
-    M_0 = M_0 - delta_M
-    current_rocket_speed = velocity(V0,a,second)
-    print(f'Текущая скорость ракеты: {current_rocket_speed } м/с')
-    
-current_rocket_speed = velocity(V0,a,180)
-print(f'Текущая скорость ракеты: {current_rocket_speed } м/с')
-
-print(Конец! (Шутка(нет)))"""

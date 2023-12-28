@@ -19,3 +19,5 @@
 [🫎] - [graphs_Xpanse_ARKT2023.py](https://github.com/plzZarbotay/xpanse/blob/main/graphs_Xpanse_ARKT2023.py) - КОД, который генерировал нам графики ( *Python File* )
 
 [💙] - [coefficient.dat](https://github.com/plzZarbotay/xpanse/blob/main/coefficient.dat) - Экспортированная таблица коэф. сопротивления из OpenFoam
+
+[💜] - [Видео-Запись Полета + Монтаж]((https://youtu.be/z4A-_AOz_Fw?si=F03oGBSF5rk8nhDs)) - Запись симмуляции полета нашего аппарата в КСП

@@ -6,7 +6,7 @@
 
 [📤] - [Xpanse.pptx](https://github.com/plzZarbotay/xpanse/blob/main/Xpanse.pptx) - Презентация проекта Xpanse ( *PPTX версия* )
 
-[📸] - [Xpanse.docx](https://github.com/plzZarbotay/xpanse/blob/main/XPanse.docx) - Отчет проекта Xpanse ( *DOCX версия* )
+[📸] - [Xpanse.docx](https://github.com/plzZarbotay/xpanse/blob/main/Xpanse.docx) - Отчет проекта Xpanse ( *DOCX версия* )
 
 [🎉] - [simulation.py](https://github.com/plzZarbotay/xpanse/blob/main/simulation.py) - Реализация симмуляции полета non-rocket-spacelaunch на языке Python 
 
